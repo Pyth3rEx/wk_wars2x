@@ -140,6 +140,8 @@ Citizen.CreateThread( function()
 			else
 				PLY.vehClassValid = true
 			end
+		else
+			PLY.vehClassValid = false -- set default
 		end
 		Citizen.Wait( 500 )
 	end
