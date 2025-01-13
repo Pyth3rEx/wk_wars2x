@@ -44,7 +44,7 @@ CONFIG.fast_limit_first_in_menu = false
 
 -- Radar only lock players with auto fast locking
 -- When enabled, the radar will only automatically lock a speed if the caught vehicle has a real player in it.
-CONFIG.only_lock_players = true
+CONFIG.only_lock_players = false
 
 -- In-game first time quick start video
 -- When enabled, the player will be asked if they'd like to view the quick start video the first time they
@@ -53,12 +53,12 @@ CONFIG.allow_quick_start_video = true
 
 -- Allow passenger view
 -- When enabled, the front seat passenger will be able to view the radar and plate reader from their end.
-CONFIG.allow_passenger_view = true
+CONFIG.allow_passenger_view = false
 
 -- Allow passenger control
 -- Dependent on CONFIG.allow_passenger_view. When enabled, the front seat passenger will be able to open the
 -- radar remote and control the radar and plate reader for themself and the driver.
-CONFIG.allow_passenger_control = true
+CONFIG.allow_passenger_control = false
 
 -- Set this to true if you use Sonoran CAD with the WraithV2 plugin
 CONFIG.use_sonorancad = false
@@ -113,15 +113,15 @@ CONFIG.menuDefaults =
 
 	-- The speed unit used in conversions
 	-- Options: mph or kmh
-	["speedType"] = "kmh",
+	["speedType"] = "mph",
 
 	-- The state for automatic speed locking. This requires CONFIG.allow_fast_limit to be true.
 	-- Options: true or false
-	["fastLock"] = true,
+	["fastLock"] = false,
 
 	-- The speed limit required for automatic speed locking. This requires CONFIG.allow_fast_limit to be true.
 	-- Options: 0 to 200
-	["fastLimit"] = 90
+	["fastLimit"] = 60
 }
 
 -- Here you can change the default scale of the UI elements, as well as the safezone size
